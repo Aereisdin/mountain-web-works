@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("./Font/Raleway-VariableFont_wght.ttf");
+}
+
+/* Custom Variables */
+$background: black;
+$font-color-nav: white;
+$font-color-nav-hover: pink;
+
+/* NavBar Bootstrap Modification */
+$navbar-light-color: rgba($font-color-nav, 0.55);
+$navbar-light-hover-color: rgba($font-color-nav, 0.7);
+$navbar-light-active-color: rgba($font-color-nav, 0.9);
+$navbar-light-disabled-color: rgba($font-color-nav, 0.3);
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+$navbar-light-toggler-border-color: rgba($font-color-nav, 0.2);
+$navbar-light-brand-color: $font-color-nav;
+$navbar-light-brand-hover-color: $font-color-nav-hover;
+/* This import remains on the bottom of the modified styles  */
+@import "~bootstrap/scss/bootstrap";
+/* Base Style */
+body {
+  background-color: $background;
+  font-family: "Raleway";
+}
+/* NavBar */
+nav {
+  background-color: $background;
+  color: $font-color-nav;
+  .nav-button {
+    color: $font-color-nav;
+    background-color: transparent;
+    border: transparent 4px solid;
+    font-weight: 700;
+  }
+  .nav-button:hover {
+    border: $font-color-nav 4px solid;
+    border-radius: 10px;
+  }
+  .navbar-brand {
+    font-size: 2em;
+    font-weight: 700;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  button.navbar-toggler {
+    margin-right: 3%;
+  }
+  a {
+    font-size: 1.75em;
+    font-weight: 500;
+  }
+}
