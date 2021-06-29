@@ -20,6 +20,10 @@ $navbar-light-brand-hover-color: $font-color-nav-hover;
 /* This import remains on the bottom of the modified styles  */
 @import "~bootstrap/scss/bootstrap";
 /* Base Style */
+html,
+body {
+  height: 100%;
+}
 body {
   background-color: $background;
   font-family: "Raleway";
@@ -51,4 +55,12 @@ nav {
     font-size: 1.75em;
     font-weight: 500;
   }
+}
+.top-spacer {
+  height: calc(50% of width);
+}
+.greeting {
+  background: rgba(225, 222, 222, 0.77);
+  text-align: center;
+  width: fit-content;
 }
