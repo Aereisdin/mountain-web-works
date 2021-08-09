@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Container } from 'react-bootstrap';
+import { Row, Col, Container, Image } from 'react-bootstrap';
 
 function Landing() {
     return (
@@ -10,7 +10,7 @@ function Landing() {
         </Row>
         <Row className="justify-content-around">
             <Col sm={10} md={4} lg={4} className="greeting">
-            <img src="mww-logo.jpeg" className="logo-display" />
+            <Image src="mww-logo.jpeg" className="logo-display" fluid/>
             <h2>Helping the Lost Sierra Connect</h2>
             </Col>
             <Col sm={10} md={7} lg={7} className="msg">
