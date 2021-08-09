@@ -2,11 +2,18 @@
   font-family: "Raleway";
   src: url("./Font/Raleway-VariableFont_wght.ttf");
 }
-
+@font-face {
+  font-family: "BerlinSans";
+  src: url("./Font/berlinsans.ttf");
+}
 /* Custom Variables */
 $background: black;
 $font-color-nav: white;
-$font-color-nav-hover: pink;
+$font-color-nav-hover: rgb(56, 181, 235);
+$Berlin: "BerlinSans";
+$Raleway: "Raleway";
+$Logo-Color-Primary: rgb(44, 87, 103);
+$Logo-Color-Secondary: rgb(127, 187, 188);
 
 /* NavBar Bootstrap Modification */
 $navbar-light-color: rgba($font-color-nav, 0.55);
@@ -30,37 +37,68 @@ body {
 }
 /* NavBar */
 nav {
-  background-color: $background;
+  background-color: $Logo-Color-Primary;
   color: $font-color-nav;
+  border-bottom: 2px white solid;
   .nav-button {
     color: $font-color-nav;
     background-color: transparent;
     border: transparent 4px solid;
     font-weight: 700;
+    margin-left: 0;
+    margin-right: 0;
   }
   .nav-button:hover {
     border: $font-color-nav 4px solid;
     border-radius: 10px;
   }
   .navbar-brand {
+    font-family: $Berlin;
     font-size: 2em;
     font-weight: 700;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .nav-link {
+    margin-left: 1.5px;
   }
   button.navbar-toggler {
     margin-right: 3%;
+    margin-left: 0;
   }
   a {
     font-size: 1.75em;
     font-weight: 500;
   }
 }
+.nav-logo {
+  height: 150px;
+}
 .top-spacer {
-  height: calc(50% of width);
+  height: 100px;
 }
 .greeting {
-  background: rgba(225, 222, 222, 0.77);
+  background: $Logo-Color-Secondary;
   text-align: center;
   width: fit-content;
+  border-radius: 15px;
+  h1 {
+    font-family: $Berlin;
+  }
+  .logo-display {
+    height: 30em;
+    margin-top: 1.5em;
+    border-radius: 10px;
+    border: 2px solid $Logo-Color-Primary;
+  }
+}
+.msg {
+  background-color: $Logo-Color-Secondary;
+  border-radius: 15px;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
