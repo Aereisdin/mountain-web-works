@@ -14,7 +14,18 @@ function Equipment() {
             <h2>Helping the Lost Sierra Connect</h2>
             </Col>
             <Col sm={10} md={7} lg={7} className="msg">
-                This is where the main body of my message will go. Maybe.
+                <h2>What is the latest and greatest?</h2>
+                <p>Good question! While it is definately important to keep up on the latest
+                  technologies, it is not always the best practice to use the latest equipment.
+                </p><br/>
+                <p>Our philosophy at Mountain Web Works is to evaluate each situation and make
+                  recommendations based on your needs and what you hope to accomplish. While we
+                  do like future proof to a certain extent, it is more important to provide great
+                  network infastructure with immediate value.
+                </p><br/>
+                <p>Every situation is different. We are committed to helping you find the solutions
+                  that will work best for you.
+                </p>
             </Col>
         </Row>
         <Row className="top-spacer">
