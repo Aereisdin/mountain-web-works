@@ -7,7 +7,7 @@ function Navigation () {
         <>
             <Navbar collapseOnSelect fixed='top' expand="lg">
             {/* <Navbar.Brand href="/"><img src="./mww-logo.svg" class="nav-logo"/></Navbar.Brand> */}
-            <Navbar.Brand href="/">Mountain Web Work</Navbar.Brand>
+            <Navbar.Brand href="/">Mountain Web Works</Navbar.Brand>
             {/* <Navbar.Brand href="/">Web</Navbar.Brand>
             <Navbar.Brand href="/">Works</Navbar.Brand>      */}
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>

@@ -4,7 +4,7 @@ import { Row, Col, Container, Image } from 'react-bootstrap';
 function Wifi() {
     return (
   <>
-    <Container fluid>
+    <Container fluid className="wifi">
         <Row className="top-spacer">
 
         </Row>
@@ -14,6 +14,7 @@ function Wifi() {
             <h2>Helping the Lost Sierra Connect</h2>
             </Col>
             <Col sm={10} md={7} lg={7} className="msg">
+              <Col className="msg-back">
                 <h2>Wi-Fi, Network, Home Connection</h2>
                 <p>In today's ever advancing world of technology we find ourselves
                   ever challenged to keep up with the demands of connection to the world
@@ -35,6 +36,7 @@ function Wifi() {
                   have an existing setup we will help you evaluate your needs and modify it or 
                   repair it as needed. 
                 </p>
+              </Col>
             </Col>
         </Row>
         <Row className="top-spacer">

@@ -4,7 +4,7 @@ import { Row, Col, Container, Image } from 'react-bootstrap';
 function Equipment() {
     return (
   <>
-    <Container fluid>
+    <Container fluid className="equipment">
         <Row className="top-spacer">
 
         </Row>
@@ -14,6 +14,7 @@ function Equipment() {
             <h2>Helping the Lost Sierra Connect</h2>
             </Col>
             <Col sm={10} md={7} lg={7} className="msg">
+              <Col className="msg-back">
                 <h2>What is the latest and greatest?</h2>
                 <p>Good question! While it is definately important to keep up on the latest
                   technologies, it is not always the best practice to use the latest equipment.
@@ -26,6 +27,7 @@ function Equipment() {
                 <p>Every situation is different. We are committed to helping you find the solutions
                   that will work best for you.
                 </p>
+              </Col>
             </Col>
         </Row>
         <Row className="top-spacer">

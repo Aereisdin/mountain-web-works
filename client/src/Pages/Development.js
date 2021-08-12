@@ -4,7 +4,7 @@ import { Row, Col, Container, Image } from 'react-bootstrap';
 function Development() {
     return (
   <>
-    <Container fluid>
+    <Container fluid className="development">
         <Row className="top-spacer">
 
         </Row>
@@ -14,6 +14,7 @@ function Development() {
             <h2>Helping the Lost Sierra Connect</h2>
             </Col>
             <Col sm={10} md={7} lg={7} className="msg">
+            <Col className="msg-back">
                 <h2>Helping You Share Your Story</h2>
                 <p>There are a lot of options out there when it comes to building a webpage.
                   Literally thousands. In this confusing environment, it is easy to get lost.</p><br/>
@@ -28,7 +29,7 @@ function Development() {
                   setup. If you feel you need ongoing help maintaining your online presence Mountain
                   Web Works can also assist in managing your Facebook, Instagram and other social media.
                 </p>
-
+            </Col>
             </Col>
         </Row>
         <Row className="top-spacer">

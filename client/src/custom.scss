@@ -7,7 +7,7 @@
   src: url("./Font/berlinsans.ttf");
 }
 /* Custom Variables */
-$background: black;
+$background: #111;
 $font-color-nav: white;
 $font-color-nav-hover: rgb(56, 181, 235);
 $Berlin: "BerlinSans";
@@ -30,6 +30,22 @@ $navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3
 $navbar-light-toggler-border-color: rgba($font-color-nav, 0.2);
 $navbar-light-brand-color: $font-color-nav;
 $navbar-light-brand-hover-color: $font-color-nav-hover;
+
+/* Navbar Brand Mod */
+.navbar-brand {
+  padding-top: $navbar-brand-padding-y;
+  padding-bottom: $navbar-brand-padding-y;
+
+  margin-right: 0px;
+  @include font-size($navbar-brand-font-size);
+  text-decoration: if($link-decoration == none, null, none);
+  white-space: normal;
+
+  &:hover,
+  &:focus {
+    text-decoration: if($link-hover-decoration == underline, none, null);
+  }
+}
 
 // Button Bootstrap Modification
 $btn-padding-y: $input-btn-padding-y;
@@ -84,6 +100,7 @@ html,
 body {
   height: 100%;
 }
+
 body {
   background-color: $background;
   font-family: "Raleway";
@@ -107,7 +124,7 @@ nav {
   }
   .navbar-brand {
     font-family: $Berlin;
-    font-size: 1.75em;
+    font-size: 1.25em;
     font-weight: 700;
     padding-left: 5px;
   }
@@ -126,11 +143,57 @@ nav {
 .nav-logo {
   height: 150px;
 }
+.landing {
+  background: url("./backgrounds/grasslake.png") no-repeat center center fixed;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  left: 0;
+  overflow: auto;
+}
+.wifi {
+  background: url("./backgrounds/grasslake.png") no-repeat center center fixed;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  left: 0;
+  overflow: auto;
+}
+.equipment {
+  background: url("./backgrounds/grasslake.png") no-repeat center center fixed;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  left: 0;
+  overflow: auto;
+}
+.development {
+  background: url("./backgrounds/grasslake.png") no-repeat center center fixed;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  left: 0;
+  overflow: auto;
+}
 .top-spacer {
   height: 100px;
 }
 .greeting {
   background: $Logo-Color-Secondary;
+  min-height: fit-content;
+  height: fit-content;
   text-align: center;
   border-radius: 15px;
   margin-bottom: 10px;
@@ -145,6 +208,15 @@ nav {
   background-color: $Logo-Color-Secondary;
   border-radius: 15px;
   height: fit-content;
+  .msg-back {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid $Logo-Color-Primary;
+    background-color: white;
+    font-size: 1.5em;
+    font-weight: 500;
+  }
 }
 .footer {
   background-color: $Logo-Color-Primary;
@@ -152,6 +224,7 @@ nav {
   left: 0;
   bottom: 0;
   width: 100%;
+  border-top: white 2px solid;
   .btn {
     margin-top: 5px;
     margin-bottom: 5px;
