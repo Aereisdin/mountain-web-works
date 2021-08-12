@@ -140,8 +140,11 @@ nav {
     font-weight: 500;
   }
 }
-.nav-logo {
-  height: 150px;
+.brand-logo {
+  height: 100px;
+  width: auto;
+  padding-top: -25px;
+  padding-bottom: -25px;
 }
 .landing {
   background: url("./backgrounds/grasslake.png") no-repeat center center fixed;
@@ -188,7 +191,7 @@ nav {
   overflow: auto;
 }
 .top-spacer {
-  height: 100px;
+  height: 150px;
 }
 .greeting {
   background: $Logo-Color-Secondary;
@@ -232,9 +235,42 @@ nav {
     color: $Logo-Color-Tertiary;
     font-weight: bolder;
   }
+  .blue {
+    color: blue;
+  }
+  .blue:hover {
+    color: rgb(66, 66, 254);
+  }
+  .purple {
+    color: purple;
+  }
+  .purple:hover {
+    color: rgb(213, 0, 213);
+  }
+  .black {
+    color: black;
+  }
+  .black:hover {
+    color: rgb(55, 55, 55);
+  }
+  .red {
+    color: red;
+  }
+  .red:hover {
+    color: rgb(255, 84, 84);
+  }
 }
 @media only screen and (max-width: 450px) {
   .navbar-brand {
     font-size: 1em;
+  }
+  .mobile-no {
+    display: none;
+  }
+  .landing,
+  .wifi,
+  .equipment,
+  .development {
+    background-image: none;
   }
 }

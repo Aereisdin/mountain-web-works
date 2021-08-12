@@ -9,7 +9,7 @@ function Equipment() {
 
         </Row>
         <Row className="justify-content-around">
-            <Col sm={10} md={4} lg={4} className="greeting">
+            <Col sm={10} md={4} lg={4} className="greeting mobile-no">
             <Image src="mww-logo.jpeg" className="logo-display" fluid/>
             <h2>Helping the Lost Sierra Connect</h2>
             </Col>
