@@ -38,8 +38,8 @@ function Landing() {
                       alt="Wade"
                       />
                     <Carousel.Caption>
-                      <h3>Wade Lake</h3>
-                      <p>A beautiful shot of Wade Lake.</p>
+                      <h3>Rock Lake</h3>
+                      <p>A beautiful shot of Rock Lake.</p>
                     </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
