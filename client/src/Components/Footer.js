@@ -6,7 +6,7 @@ import { faInstagram, faFacebookSquare } from '@fortawesome/free-brands-svg-icon
 
 function Facebook() {
     window.open(
-        "fb://facewebmodal/f?href=mountainwebworks/"
+        "fb://profile/mountainwebworks/"
         // "https://www.facebook.com/MountainWebWorks", "_blank"
     )
 };
@@ -34,7 +34,7 @@ function Footer() {
                     <Button onClick={()=>Facebook()} alt="Facebook"><FontAwesomeIcon icon={faFacebookSquare} className="fa-2x blue"/><span className="mobile-no"> Facebook</span></Button>
                 </Col>
                 <Col>
-                    <Button onClick={()=>Instagram()} alt="Instagram"><FontAwesomeIcon icon={faInstagram} className="fa-2x purple" /><span className="mobile-no"> Instsgram</span></Button>
+                    <Button onClick={()=>Instagram()} alt="Instagram"><FontAwesomeIcon icon={faInstagram} className="fa-2x purple" /><span className="mobile-no"> Instagram</span></Button>
                 </Col>
                 <Col>
                     <Button onClick={()=>Email()} alt="info@mountainwebworks" ><FontAwesomeIcon icon={faEnvelope} className="fa-2x black" /><span className="mobile-no"> Email Us</span></Button>
